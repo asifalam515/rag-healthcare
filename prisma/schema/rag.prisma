@@ -6,7 +6,7 @@ model DocumentEmbedding{
     sourceLabel String?
     content String
     metadata Json?
-    embedding Unsupported("vector")
+    embedding Unsupported("vector(384)")
     isDeleted Boolean @default(false)
     deletedAt DateTime ?
     createdAt DateTime @default(now())
